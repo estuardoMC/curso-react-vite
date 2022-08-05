@@ -1,10 +1,6 @@
 import React from 'react'//importacion de react
 import ReactDOM from 'react-dom/client'//react dom
-
-//comenzar con un functional component
-const App =()=>{
-    return (<h1>Hola mundo</h1>);
-};
+import { App } from './HelloWordlApp'//importamos nuestro componente 
 
 //creamos una raiz y luego renderizamos la aplicacion
 ReactDOM.createRoot(document.getElementById("root")).render(
