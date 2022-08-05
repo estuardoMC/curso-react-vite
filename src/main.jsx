@@ -6,7 +6,6 @@ import { App } from './HelloWordlApp'//importamos nuestro componente
 //creamos una raiz y luego renderizamos la aplicacion
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <App/>
         <FirstApp/>
     </React.StrictMode>
 )//cuando se llaman o se pintan los componentes dentro de una etiqueda debe empezar el nombre del componente y terminar con /
