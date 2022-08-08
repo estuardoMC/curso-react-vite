@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const name = "Estuardo";
 let arrN = [1,2,3,4,5,6];
 let stringN = "";
@@ -19,3 +21,11 @@ export const FirstApp = ({title, numero})=>{//los props los podemos ver como par
         </>
     ); 
 };
+
+//prop-types nos sirven para definir que tipo de dato en los proops queremos recibir en nuestro componente 
+//asi las definimos
+
+FirstApp.propTypes = {
+    title: PropTypes.string.isRequired//decimos que nuestros prop title debe ser de tipo //utilizamos .isRequired para decir que es obligatorio 
+
+}
