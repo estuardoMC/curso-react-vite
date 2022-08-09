@@ -29,3 +29,7 @@ FirstApp.propTypes = {
     title: PropTypes.string.isRequired//decimos que nuestros prop title debe ser de tipo //utilizamos .isRequired para decir que es obligatorio 
 
 }
+//defiir los props por defecto  
+FirstApp.defaultProps = {
+    title: "No hay titulo"
+}
