@@ -5,3 +5,12 @@ html, body{
     font-size: 1.3rem;
     padding: 70px;
 }
+button{
+    padding: 5px 20px;
+    font-size: 1rem;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.75);
+    cursor: pointer;
+    background-color: aqua;
+}
