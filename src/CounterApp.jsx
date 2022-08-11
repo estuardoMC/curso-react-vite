@@ -8,6 +8,15 @@ export const CounterApp =({value})=>{//podemos usar el valor que desestructuramo
         //otra forma de modificar el valor del state es mandando a llamar el setCouter mandando un callback que retorna el valor del state y despues podemos modificarlo
         setCounter((s) => s + 1)
     }
+    const handleSubstract = ()=>{
+        setCounter( counter -1 );
+    }
+    const handleReset = ()=>{
+        //setCounter( counter = value );//saldra error
+
+        //setCounter((s) => s = value) esta es una opcion pero es mejor solo mandarle el valor que queremos asignar
+        setCounter( value )
+    }
     return (
         <>
             <h1>CounterApp</h1>
@@ -15,9 +24,13 @@ export const CounterApp =({value})=>{//podemos usar el valor que desestructuramo
             <button onClick={ handleAdd } /*recibimos el e y lo mandamos a la funcion*/>
                 +1
             </button>
+            <button onClick={ handleSubstract }> -1</button>
+            <button onClick={ handleReset }> reset </button>
         </>
     )
 }
 CounterApp.propTypes = {
     value: PropTypes.number
 }
+//notas: cuando hay un camio ya sea en el estado, nuestro functional component se va a volver a renderisar
+//pero no cambiara el estado
