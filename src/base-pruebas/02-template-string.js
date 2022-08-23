@@ -1,4 +1,5 @@
-
+//para hacer una prueba debemos exportar la funcion que queremos probar
+ 
 export const getSaludo =(nombre) => {
     return 'Hola ' + nombre;
 }
